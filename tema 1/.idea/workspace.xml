@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1cab016-22fd-4cf8-90c0-10ecf8832267" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/reset-01.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reset_01.iml" beforeDir="false" />
+    <list default="true" id="c0ce5354-05be-4fbf-ac0a-8a550ffcd9cd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,9 +10,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1Yw84sgZrk7orBLNXIIczwAj2Wf" />
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Jonatan Silva\reset-01\tema 1\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YwCY8uUfjfBgEGzhiSqnscptek" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -23,26 +28,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f1cab016-22fd-4cf8-90c0-10ecf8832267" name="Default Changelist" comment="" />
-      <created>1583842108113</created>
+      <changelist id="c0ce5354-05be-4fbf-ac0a-8a550ffcd9cd" name="Default Changelist" comment="" />
+      <created>1583844315713</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583842108113</updated>
+      <updated>1583844315713</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="65" y="0" key="new project wizard" timestamp="1583844314523">
+    <state x="65" y="0" key="new project wizard" timestamp="1583844765526">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1583844314523" />
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1583844765526" />
   </component>
 </project>
