@@ -31,57 +31,57 @@ public class ArenaDeBatalha{
         System.out.println("Ataque "+ leonardo.getNome() +" Vida juliano = "+ juliano.getVida());
 
 //mago
-        Mago alakazam = new Mago("alakaazam",2500f,50f,98f);
+        Mago alakazam = new Mago("alakaazam",2500f,50f,98f, 125f);
 
-        Mago mew = new Mago("mew",2900f,179f,98f);
+        Mago mew = new Mago("mew",2900f,179f,98f, 145f);
 
-        alakazam.atacar(mew, new BolaDeFogo("esplosaoSolar", 670f));
+        alakazam.atacar(mew, new BolaDeFogo("esplosaoSolar", 670f, 45f));
 
         System.out.println("Ataque "+ alakazam.getNome() +" Vida mew = "+ mew.getVida());
 
-        mew.atacar(alakazam, new BolaDeFogo("relampago", 489f));
+        mew.atacar(alakazam, new BolaDeFogo("relampago", 489f, 12f));
 
         System.out.println("Ataque "+ mew.getNome() +" Vida alakazam = "+ alakazam.getVida());
 
 //feiticeiro
 
-        Feiticeiro bruxo = new Feiticeiro("bruxo",1300f,193f,243f);
+        Feiticeiro bruxo = new Feiticeiro("bruxo",1300f,193f,243f, 96f);
 
-        Feiticeiro dambodor  = new Feiticeiro("dambodor",4590f,364f,420f);
+        Feiticeiro dambodor  = new Feiticeiro("dambodor",4590f,364f,420f, 112f);
 
-        bruxo.atacar(bruxo, new Relampago("claraoDaNoite", 263f));
+        bruxo.atacar(bruxo, new Relampago("claraoDaNoite", 263f, 45f));
 
         System.out.println("Ataque "+ bruxo.getNome() +" Vida dambodor = "+ dambodor.getVida());
 
-        dambodor.atacar(dambodor, new Relampago("trovaoDorado", 630f));
+        dambodor.atacar(dambodor, new Relampago("trovaoDorado", 630f, 25f));
 
         System.out.println("Ataque "+ dambodor.getNome() +" Vida bruxo = "+ bruxo.getVida());
 
 //druidas
 
-        Druida velhoElfo = new Druida("velhoElfo",560f,23f,239f);
+        Druida velhoElfo = new Druida("velhoElfo",560f,23f,239f, 236f);
 
-        Druida mineiro  = new Druida("mineiro",652f,41f,96f);
+        Druida mineiro  = new Druida("mineiro",652f,41f,96f, 20f);
 
-        velhoElfo.atacar(velhoElfo, new FuriaDaNatureza("florestaNebulosa", 746f));
+        velhoElfo.atacar(velhoElfo, new FuriaDaNatureza("florestaNebulosa", 746f, 36f));
 
         System.out.println("Ataque "+ velhoElfo.getNome() +" Vida mineiro = "+ mineiro.getVida());
 
-        mineiro.atacar(mineiro, new FuriaDaNatureza("terremoto", 900f));
+        mineiro.atacar(mineiro, new FuriaDaNatureza("terremoto", 900f, 450f));
 
         System.out.println("Ataque "+ mineiro.getNome() +" Vida velhoElfo = "+ velhoElfo.getVida());
 
 //clerigo
 
-        Clerigo donFrancisco = new Clerigo("donFrancisco",420f,800f,150f);
+        Clerigo donFrancisco = new Clerigo("donFrancisco",420f,800f,150f, 320f );
 
-        Clerigo donJoao  = new Clerigo("donJoao",589f,795f,156f);
+        Clerigo donJoao  = new Clerigo("donJoao",589f,795f,156f, 124f);
 
-        donFrancisco.atacar(donFrancisco, new FuriaDosDeuses("vozDeDeus", 956f));
+        donFrancisco.atacar(donFrancisco, new FuriaDosDeuses("vozDeDeus", 956f, 362f));
 
         System.out.println("Ataque "+ donFrancisco.getNome() +" Vida donJoao = "+ donJoao.getVida());
 
-        donJoao.atacar(donJoao, new FuriaDosDeuses("asasDeIkaro", 420f));
+        donJoao.atacar(donJoao, new FuriaDosDeuses("asasDeIkaro", 420f, 213f));
 
         System.out.println("Ataque "+ donJoao.getNome() +" Vida donFrancisco = "+ donFrancisco.getVida());
 
@@ -112,57 +112,57 @@ public class ArenaDeBatalha{
         System.out.println("Ataque "+ leonardo.getNome() +" Vida juliano = "+ juliano.getVida());
 
 //mago
-        Mago alakazam = new Mago("alakaazam",2500f,50f,98f);
+        Mago alakazam = new Mago("alakaazam",2500f,50f,98f, 63f);
 
-        Mago mew = new Mago("mew",2900f,179f,98f);
+        Mago mew = new Mago("mew",2900f,179f,98f, 56f);
 
-        alakazam.atacar(mew, new BolaDeFogo("esplosaoSolar", 670f));
+        alakazam.atacar(mew, new BolaDeFogo("esplosaoSolar", 670f, 36f));
 
         System.out.println("Ataque "+ alakazam.getNome() +" Vida mew = "+ mew.getVida());
 
-        mew.atacar(alakazam, new BolaDeFogo("relampago", 489f));
+        mew.atacar(alakazam, new BolaDeFogo("relampago", 489f, 45f));
 
         System.out.println("Ataque "+ mew.getNome() +" Vida alakazam = "+ alakazam.getVida());
 
 //feiticeiro
 
-        Feiticeiro bruxo = new Feiticeiro("bruxo",1300f,193f,243f);
+        Feiticeiro bruxo = new Feiticeiro("bruxo",1300f,193f,243f, 145f);
 
-        Feiticeiro dambodor  = new Feiticeiro("dambodor",4590f,364f,420f);
+        Feiticeiro dambodor  = new Feiticeiro("dambodor",4590f,364f,420f, 246f);
 
-        bruxo.atacar(bruxo, new Relampago("claraoDaNoite", 263f));
+        bruxo.atacar(bruxo, new Relampago("claraoDaNoite", 263f, 245f));
 
         System.out.println("Ataque "+ bruxo.getNome() +" Vida dambodor = "+ dambodor.getVida());
 
-        dambodor.atacar(dambodor, new Relampago("trovaoDorado", 630f));
+        dambodor.atacar(dambodor, new Relampago("trovaoDorado", 630f, 245f));
 
         System.out.println("Ataque "+ dambodor.getNome() +" Vida bruxo = "+ bruxo.getVida());
 
 //druidas
 
-        Druida velhoElfo = new Druida("velhoElfo",560f,23f,239f);
+        Druida velhoElfo = new Druida("velhoElfo",560f,23f,239f, 124f);
 
-        Druida mineiro  = new Druida("mineiro",652f,41f,96f);
+        Druida mineiro  = new Druida("mineiro",652f,41f,96f, 36f);
 
-        velhoElfo.atacar(velhoElfo, new FuriaDaNatureza("florestaNebulosa", 746f));
+        velhoElfo.atacar(velhoElfo, new FuriaDaNatureza("florestaNebulosa", 746f, 314f));
 
         System.out.println("Ataque "+ velhoElfo.getNome() +" Vida mineiro = "+ mineiro.getVida());
 
-        mineiro.atacar(mineiro, new FuriaDaNatureza("terremoto", 900f));
+        mineiro.atacar(mineiro, new FuriaDaNatureza("terremoto", 900f, 78f));
 
         System.out.println("Ataque "+ mineiro.getNome() +" Vida velhoElfo = "+ velhoElfo.getVida());
 
 //clerigo
 
-        Clerigo donFrancisco = new Clerigo("donFrancisco",420f,800f,150f);
+        Clerigo donFrancisco = new Clerigo("donFrancisco",420f,800f,150f, 475f);
 
-        Clerigo donJoao  = new Clerigo("donJoao",589f,795f,156f);
+        Clerigo donJoao  = new Clerigo("donJoao",589f,795f,156f, 36f);
 
-        donFrancisco.atacar(donFrancisco, new FuriaDosDeuses("vozDeDeus", 956f));
+        donFrancisco.atacar(donFrancisco, new FuriaDosDeuses("vozDeDeus", 956f, 47f));
 
         System.out.println("Ataque "+ donFrancisco.getNome() +" Vida donJoao = "+ donJoao.getVida());
 
-        donJoao.atacar(donJoao, new FuriaDosDeuses("asasDeIkaro", 420f));
+        donJoao.atacar(donJoao, new FuriaDosDeuses("asasDeIkaro", 420f, 245f));
 
         System.out.println("Ataque "+ donJoao.getNome() +" Vida donFrancisco = "+ donFrancisco.getVida());
 
