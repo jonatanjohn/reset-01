@@ -8,7 +8,7 @@ public class Barbaros {
     private float defesa;
     private float ataque;
 
-            Barbaros(String nome, float vida, float defesa, float ataque) {
+            public Barbaros(String nome, float vida, float defesa, float ataque) {
             this.nome = nome;
             this.vida = vida;
             this.defesa = defesa;
