@@ -1,6 +1,7 @@
-public class App {
+import java.util.Scanner;
+import java.util.Vector;
 
-    import java.util.Scanner;
+public class Entrada {
 
     import Barbaro;
     import Clerigo;
@@ -9,7 +10,7 @@ public class App {
     import Guerreiro;
     import Mago;
 
-        public static Personagem criarPersonagens {
+        public static Personagem criarPersonagen {
             Scanner in = new Scanner(System.in);
             System.out.println("Crie seu próprio herói!");
             System.out.println("Primeiro, escolha a classe do personagem:");
@@ -25,11 +26,11 @@ public class App {
             System.out.print("Nome: ");
             String nome = in.next();
             System.out.print("Vida: ");
-            float vida = in.nextDouble();
+            float vida = in.nextFloat();
             System.out.print("Ataque: ");
-            float ataque = in.nextDouble();
+            float ataque = in.nextFloat();
             System.out.print("Defesa: ");
-            float defesa = in.nextDouble();
+            float defesa = in.nextFloat();
 
             int fe;
             int mana;
@@ -83,7 +84,7 @@ public class App {
                     feiticeiro.imprimirEstado();
                     break;
             }
-            ArrayList<Personagem> listaDePersonagens = new ArrayList<Personagem>();
+            Vector<Personagem> listaDePersonagens = new Vector<Personagem>();
             int numeroMinimoDePersonagens = 6;
             int contador = 0;
             boolean usuarioQuerContinuarCriandoPersonagens = true;

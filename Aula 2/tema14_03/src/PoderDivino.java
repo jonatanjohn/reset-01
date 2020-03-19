@@ -8,4 +8,5 @@ public class PoderDivino {
         this.poderAtaque = poderAtaque;
         this.fe = fe;
     }
+
 }
