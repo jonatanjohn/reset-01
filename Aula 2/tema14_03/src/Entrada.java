@@ -11,6 +11,26 @@ public class Entrada {
     import Mago;
 
         public static Personagem criarPersonagen {
+
+        Vector<Personagem> listaDePersonagens = new Vector<Personagem>();
+        int numeroMinimoDePersonagens = 6;
+        int contador = 0;
+        boolean usuarioQuerContinuarCriandoPersonagens = true;
+
+        while (usuarioQuerContinuarCriandoPersonagens){
+            if(contador>=numeroMinimoDePersonagens)
+            {
+                System.out.println("Deseja continuar criando personagens?");
+                char escolha = in.next();
+
+                if(escolha == 'n')
+                {
+                    usuarioQuerContinuarCriandoPersonagens = false;
+                }
+
+            }
+        }
+
             Scanner in = new Scanner(System.in);
             System.out.println("Crie seu próprio herói!");
             System.out.println("Primeiro, escolha a classe do personagem:");
@@ -40,12 +60,14 @@ public class Entrada {
                     System.out.println("Criando guerreiro...");
                     Guerreiro guerreiro = new Guerreiro(nome, vida, ataque, defesa);
                     guerreiro.imprimirEstado();
+                    listaDePersonagens.add(guerreiro);
                     break;
 
                 case 'B':
                     System.out.println("Criando bárbaro...");
                     Barbaro barbaro = new Barbaro(nome, vida, ataque, defesa);
                     barbaro.imprimirEstado();
+                    listaDePersonagens.add(barbaro);
                     break;
 
                 case 'C':
@@ -55,6 +77,7 @@ public class Entrada {
                     System.out.println("Criando clérigo...");
                     Clerigo clerigo = new Clerigo(nome, vida, ataque, defesa, fe);
                     clerigo.imprimirEstado();
+                    listaDePersonagens.add(clerigo);
                     break;
 
                 case 'D':
@@ -64,6 +87,7 @@ public class Entrada {
                     System.out.println("Criando druida...");
                     Druida druida = new Druida(nome, vida, ataque, defesa, fe);
                     druida.imprimirEstado();
+                    listaDePersonagens.add(druida);
                     break;
 
                 case 'M':
@@ -73,6 +97,7 @@ public class Entrada {
                     System.out.println("Criando mago...");
                     Mago mago = new Mago(nome, vida, ataque, defesa, mana);
                     mago.imprimirEstado();
+                    listaDePersonagens.add(mago);
                     break;
 
                 case 'F':
@@ -82,25 +107,9 @@ public class Entrada {
                     System.out.println("Criando feiticeiro...");
                     Feiticeiro feiticeiro = new Feiticeiro(nome, vida, ataque, defesa, mana);
                     feiticeiro.imprimirEstado();
+                    listaDePersonagens.add(feiticeiro);
                     break;
             }
-            Vector<Personagem> listaDePersonagens = new Vector<Personagem>();
-            int numeroMinimoDePersonagens = 6;
-            int contador = 0;
-            boolean usuarioQuerContinuarCriandoPersonagens = true;
 
-            while (usuarioQuerContinuarCriandoPersonagens){
-                if(contador>=numeroMinimoDePersonagens)
-                {
-                    System.out.println("Deseja continuar criando personagens?");
-                    char escolha = in.next();
-
-                    if(escolha == 'n')
-                    {
-                        usuarioQuerContinuarCriandoPersonagens = false;
-                    }
-
-            }
-        }
     }
 }
