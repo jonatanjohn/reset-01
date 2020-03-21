@@ -16,5 +16,8 @@ public class Personagem {
 
     void registrar(String nomeAlvo, String habilidade, double dano) {
         System.out.println(this.nome + " atacou " + nomeAlvo + " com " + habilidade + " causando " + dano + " de dano");
+
     }
-}
+    
+   }
+//i.	Exemplo: [14/03/2020 15:01:35.0001] Ramza atacou Wiegraf com Espada Longa causando 45 de dano

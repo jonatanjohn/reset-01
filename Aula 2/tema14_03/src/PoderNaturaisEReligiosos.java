@@ -1,3 +1,5 @@
+import java.time.Instant;
+
 public class PoderNaturaisEReligiosos extends Personagem {
     float fe;
 
@@ -12,8 +14,9 @@ public class PoderNaturaisEReligiosos extends Personagem {
 
     void atacar(Personagem alvo, PoderDivino poderDivino) {
         double dano = calcularDano(alvo.defesa, poderDivino.poderAtaque);
+        System.out.println(Instant.now().toString() + " " + nome + " Atacou " + poderDivino.nome + " Causando " + dano + " dano");
         alvo.vida -= dano;
-        this.fe -= poderDivino.custoFe;
+        this.fe -= poderDivino.fe;
         registrar(alvo.nome, poderDivino.nome, dano);
     }
 }

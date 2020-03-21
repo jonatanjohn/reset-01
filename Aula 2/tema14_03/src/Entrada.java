@@ -1,38 +1,32 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Vector;
 
+import static sun.rmi.transport.TransportConstants.Return;
+
 public class Entrada {
 
-    import Barbaro;
-    import Clerigo;
-    import Druida;
-    import Feiticeiro;
-    import Guerreiro;
-    import Mago;
+    public static void main(String[] args){
 
-        public static Personagem criarPersonagen {
+        ArrayList<Personagem> listaDePersonagens = criarPersonagen();
+        for (Personagem P : listaDePersonagens)
+        {
+            System.out.println(P.nome);
 
-        Vector<Personagem> listaDePersonagens = new Vector<Personagem>();
+        }
+
+    }
+    public static ArrayList<Personagem> criarPersonagen() {
+
+        ArrayList<Personagem> listaDePersonagens = new ArrayList<>();
         int numeroMinimoDePersonagens = 6;
         int contador = 0;
         boolean usuarioQuerContinuarCriandoPersonagens = true;
 
-        while (usuarioQuerContinuarCriandoPersonagens){
-            if(contador>=numeroMinimoDePersonagens)
-            {
-                System.out.println("Deseja continuar criando personagens?");
-                char escolha = in.next();
-
-                if(escolha == 'n')
-                {
-                    usuarioQuerContinuarCriandoPersonagens = false;
-                }
-
-            }
-        }
+        while (usuarioQuerContinuarCriandoPersonagens) {
 
             Scanner in = new Scanner(System.in);
-            System.out.println("Crie seu próprio herói!");
+            System.out.println("Crie seu próprio herói!" + " " + contador);
             System.out.println("Primeiro, escolha a classe do personagem:");
             System.out.println("G - Guerreiro");
             System.out.println("B - Bárbaro");
@@ -110,6 +104,20 @@ public class Entrada {
                     listaDePersonagens.add(feiticeiro);
                     break;
             }
+contador++;
+            if (contador >= numeroMinimoDePersonagens) {
+                System.out.println("Deseja continuar criando personagens? (y/n)");
+                char escolha = in.next().charAt(0);
+
+                if (escolha == 'n') {
+                    usuarioQuerContinuarCriandoPersonagens = false;
+                }
+
+            }
+
+        }
+        return  listaDePersonagens;
 
     }
+
 }
