@@ -9,10 +9,42 @@ public class Entrada {
     public static void main(String[] args){
 
         ArrayList<Personagem> listaDePersonagens = criarPersonagen();
-        for (Personagem P : listaDePersonagens)
+        boolean continuarCombate = true;
+        while (continuarCombate)
         {
-            System.out.println(P.nome);
+            for (Personagem P : listaDePersonagens)
+            {
+                System.out.println(P.nome);
 
+            }
+            System.out.println("Digite o nome do heroe atacante:");
+            Scanner in = new Scanner(System.in);
+            Personagem primeiroPersonagem = null;
+            String primeiroHeroi = in.next();
+            for (Personagem P : listaDePersonagens){
+                if (P.nome.equalsIgnoreCase(primeiroHeroi)){
+                    primeiroPersonagem = P;
+                }
+            }
+
+            System.out.println("Digite o nome do heroe de defesa:");
+            Personagem segundoPersonagem = null;
+            String segundoHeroi = in.next();
+            for (Personagem P : listaDePersonagens){
+                if (P.nome.equalsIgnoreCase(segundoHeroi)){
+                    segundoPersonagem = P;
+                }
+            }
+
+            primeiroPersonagem.atacar(primeiroPersonagem,segundoPersonagem);
+
+            System.out.println("Você deseja continuar o combate: (y/n)");
+
+            char escolha = in.next().charAt(0);
+
+            if (escolha == 'n') {
+                continuarCombate = false;
+            }
         }
 
     }
