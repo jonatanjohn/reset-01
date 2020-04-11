@@ -62,9 +62,11 @@ public class EntradaUsuario {
         System.out.println("\nCriação de Usuario...");
 
         boolean nomeValid = false;
-        while (!nomeValid){
+        String nome = null;
 
-            String nome = null;
+        while (!nomeValid) {
+
+
             System.out.print("Nome: ");
             nome = scanner.nextLine();
             if (!nome.isEmpty()) {
@@ -73,14 +75,12 @@ public class EntradaUsuario {
 
         }
 
-
-
         boolean emailExistente = false;
         boolean emailValidado = false;
 
         String email = null;
 
-        while(!emailValidado) {
+        while (!emailValidado) {
             System.out.print("Email: ");
             email = scanner.nextLine();
 
@@ -93,17 +93,32 @@ public class EntradaUsuario {
                 }
 
             }
-            if (!emailExistente);
+            if (!emailExistente) ;
             {
                 emailValidado = true;
             }
         }
 
 
+        boolean idadeValida = false;
 
+        int ano = 0;
 
-        System.out.print("Ano de Nascimento: ");
-        int ano = scanner.nextInt();
+        while (!idadeValida) {
+
+            System.out.print("Ano de Nascimento: ");
+            ano = scanner.nextInt();
+
+            int idade = 2020 - ano;
+
+            if (idade >= 18)
+            {
+                idadeValida = true;
+            }
+
+        }
+
+        //Não consegui efetuar o calculo da idade levando consideração os meses e dias
 
         System.out.print("Mês de Nascimento: ");
         int mes = scanner.nextInt();
@@ -111,19 +126,75 @@ public class EntradaUsuario {
         System.out.print("Dia de Nascimento: ");
         int dia = scanner.nextInt();
 
-        System.out.print("Telefone: ");
-        int telefone = scanner.nextInt();
 
-        System.out.print("Bio: ");
-        String bio = scanner.nextLine();
+        boolean telefoneValid = false;
+        Integer telefone = null;
 
-        System.out.print("Localização latitude: ");
-        double latitude = scanner.nextInt();
+        while (!telefoneValid) {
 
-        System.out.print("Localização longitude: ");
-        int longitude = scanner.nextInt();
+            System.out.print("Telefone: ");
+            telefone = scanner.nextInt();
+            if (telefone != null) {
+                telefoneValid = true;
+            }
+        }
 
-        Usuario usuario = new Usuario(nome, email, telefone, LocalDate.of(ano, mes, dia), bio,latitude, longitude);
+
+        boolean bioValid = false;
+        String bio = null;
+
+        while (!bioValid) {
+            System.out.print("Bio: ");
+            bio = scanner.nextLine();
+
+            if (!bio.isEmpty()) {
+                bioValid = true;
+            }
+
+        }
+
+
+        boolean locLatVal = false;
+        String latitude = null;
+
+        while (!locLatVal) {
+
+            System.out.print("Localização latitude: ");
+            latitude = scanner.nextLine();
+            if (!latitude.isEmpty()) {
+                locLatVal = true;
+            }
+        }
+
+
+        boolean locLogVal = false;
+        String longitude = null;
+
+        while (!locLogVal) {
+
+            System.out.print("Localização longitude: ");
+            longitude = scanner.next();
+            if (!longitude.isEmpty()) {
+                locLatVal = true;
+            }
+        }
+
+        boolean linkDaFotoValido = false;
+        String linkDaFoto = null;
+
+        while (!linkDaFotoValido)
+        {
+            System.out.print("Link da foto: ");
+            linkDaFoto = scanner.next();
+            if (!linkDaFoto.isEmpty())
+            {
+                linkDaFotoValido = true;
+            }
+        }
+
+
+
+        Usuario usuario = new Usuario(nome, email, telefone, LocalDate.of(ano, mes, dia), bio, latitude, longitude, linkDaFoto);
         return gerenciador.salvar(usuario);
 
     }
@@ -164,15 +235,15 @@ public class EntradaUsuario {
         String bio = scanner.nextLine();
 
         System.out.print("Localização latitude: ");
-        double latitude = scanner.nextInt();
+        String latitude = scanner.next();
 
         System.out.print("Localização longitude: ");
-        double longitude = scanner.nextInt();
+        String longitude = scanner.next();
 
+        System.out.print("Link da foto: ");
+        String linkDaFoto = scanner.next();
 
-
-
-        Usuario atualizacao = new Usuario(nome, email, telefone, LocalDate.of(ano, mes, dia), bio, latitude, longitude);
+        Usuario atualizacao = new Usuario(nome, email, telefone, LocalDate.of(ano, mes, dia), bio, latitude, longitude, linkDaFoto);
 
         Usuario usuarioAtualizada = gerenciador.editar(id, atualizacao);
 

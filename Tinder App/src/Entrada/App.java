@@ -1,7 +1,7 @@
 package Entrada;
 
 import Curiosidades.Curiosidade;
-import Usuario.Usuario;
+import Usuario.*;
 
 import java.util.Scanner;
 
@@ -15,6 +15,11 @@ public class App {
         jogos();
         curiosidades();
         esportes();
+    }
+
+    public void Likes()
+    {
+        GerenciamentoDeUsuario gerenciamentoDeUsuario;
     }
 
     public static void Usuario() {
