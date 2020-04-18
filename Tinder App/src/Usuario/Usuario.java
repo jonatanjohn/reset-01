@@ -168,12 +168,12 @@ public class Usuario {
         this.linkDaFoto = linkDaFoto;
     }
 
-    public String listarMusicasDoUsuario()
-    {
+    public String listarMusicasDoUsuario() {
+
         String musicas = "";
 
-        for (Musica musica : musicasCurtidas)
-        {
+        for (Musica musica : musicasCurtidas){
+
             musicas += musica.toString();
         }
 
