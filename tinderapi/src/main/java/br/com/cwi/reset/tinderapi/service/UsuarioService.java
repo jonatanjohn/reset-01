@@ -1,11 +1,8 @@
 package br.com.cwi.reset.tinderapi.service;
 
-import br.com.cwi.reset.tinderapi.controller.usuario.request.CriarUsuarioRequestDto;
 import br.com.cwi.reset.tinderapi.dominio.Usuario;
 import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
